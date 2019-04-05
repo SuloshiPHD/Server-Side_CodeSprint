@@ -39,15 +39,15 @@ if (!empty($email&&$password)){
 			echo "Hello,".$_SESSION['fname']." ".$_SESSION['sname'];
 			if($arrayu['userType']=='A'){
 				$_SESSION['usertype']='Administrator';
-				echo "<br>You have successfully logged in as a homteq Administrator !";
+				echo "<br>You have successfully logged in as a QuizLet Administrator !";
 				echo "<br>Continue shopping for : <a href='index.php'>Home Tech</a>";
 			}
 			
 			if($arrayu['userType']=='C'){
 				$_SESSION['usertype']='Customer';
-				echo "<br>You have successfully logged in as a homteq Customer !";
+				echo "<br>You have successfully logged in as a QuizLet Customer !";
 				echo "<br>Continue shopping for : <a href='index.php'>Home Tech</a>";
-			    echo "<br>View your : <a href='basket.php'>Smart Basket</a>";
+			   
 			}
 			
 			
