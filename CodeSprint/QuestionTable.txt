@@ -4,4 +4,36 @@ CREATE TABLE `codesprintdb`.`QuestionTbl` ( `QId` INT(4) NOT NULL , `Subject` VA
 ALTER TABLE `questiontbl` CHANGE `QId` `QId` INT(4) NOT NULL AUTO_INCREMENT; 
 
 
+INSERT INTO questiontbl (Subject,Question,Answer )
+VALUES ('Mathematics','There are 123 boxes of sweets in a store. There are 25 sweets in each box. How many sweets are in the store?','3075');
+
+INSERT INTO questiontbl (Subject,Question,Answer )
+VALUES ('Mathematics','123 school girls are to be transported in small vans. Each van can carry 8 girls only. What is the smallest possible number of vans that are needed to transport all 123 school girls?','16');
+
+
+INSERT INTO questiontbl (Subject,Question,Answer )
+VALUES ('Mathematics','There are 365 days in one year, and 100 years in one century. How many days are in one century?','36,500');
+
+
+INSERT INTO questiontbl (Subject,Question,Answer )
+VALUES ('History','Who was the President of America before Barack Obama?','George Bush ');
+
+INSERT INTO questiontbl (Subject,Question,Answer )
+VALUES ('History','What was the name of the German leader during World War II?','Adolf Hitler ');
+
+INSERT INTO questiontbl (Subject,Question,Answer )
+VALUES ('History','In which country are the famous Pyramids of Giza?','Egypt');
+
+
+INSERT INTO questiontbl (Subject,Question,Answer )
+VALUES ('Sports','Do you know how many players there are in an ice hockey team?','6');
+INSERT INTO questiontbl (Subject,Question,Answer )
+VALUES ('Sports','Which country invented Volleyball?','United States of America');
+INSERT INTO questiontbl (Subject,Question,Answer )
+VALUES ('Sports','How many feet should the centre of the net on a tennis court measure?','Three feet');
+
+
+
+
+
  
