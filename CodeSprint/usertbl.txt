@@ -1,0 +1,4 @@
+
+//creating user database
+
+CREATE TABLE `codesprintdb`.`Users` ( `userId` INT(4) NOT NULL AUTO_INCREMENT , `userType` VARCHAR(1) NOT NULL , `userFName` VARCHAR(50) NOT NULL , `userSName` VARCHAR(50) NOT NULL , `userAddress` VARCHAR(50) NOT NULL , `userPostCode` VARCHAR(50) NOT NULL , `userTelNo` VARCHAR(50) NOT NULL , `userEmail` VARCHAR(50) NOT NULL , `userPassword` VARCHAR(50) NOT NULL , PRIMARY KEY (`userId`)) ENGINE = InnoDB; 
