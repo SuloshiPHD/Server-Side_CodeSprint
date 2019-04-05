@@ -1,0 +1,7 @@
+//Question table
+CREATE TABLE `codesprintdb`.`QuestionTbl` ( `QId` INT(4) NOT NULL , `Subject` VARCHAR(30) NOT NULL , `Question` VARCHAR(1000) NOT NULL , `Answer` VARCHAR(100) NOT NULL , PRIMARY KEY (`QId`)) ENGINE = InnoDB;
+
+ALTER TABLE `questiontbl` CHANGE `QId` `QId` INT(4) NOT NULL AUTO_INCREMENT; 
+
+
+ 
