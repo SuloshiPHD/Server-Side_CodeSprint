@@ -6,6 +6,43 @@ echo "<body>";
 include ("headfile.html"); //include header layout file
 echo "<h4>".$pagename."</h4>"; //display name of the page on the web page
 
+$subjname= $_POST['subjname'];
+$questadded = $_POST['questadded'];
+$answer= $_POST['answer'];
+
+
+if (!empty($subjname||$questadded||$answer)){
+
+
+    $SQL="INSERT INTO questiontbl (Subject,Question,Answer)
+    VALUES('".$subjname."','".$questadded."','".$answer."')"; 
+    //run SQL query for connected DB or exit and display error message 
+    $exeSQL=mysqli_query($conn, $SQL) or die (mysqli_error());  
+    
+    $errNo = mysqli_errno($conn);
+    if ($errNo == 0){
+        echo "successfully entered the new question"; 
+    }
+    if($errNo != 0){
+      if($errNo = 1062){
+        echo " The uniqueness of the question has been breached";
+        echo "<br><a href='addquestion.php'>Go Back</a>";
+      }
+      if ($errNo == 1064){
+        echo "Illegal characters have been entered such as apostrophes [ ' ] and backslashes [ \ ]";
+        echo "<br><a href='addquestion.php'>Go Back</a>";
+      }
+      if($errNo == 1054){
+        echo "Illegal characters have been entered in the fields that are expecting numerical values";
+        echo "<br><a href='addquestion.php'>Go Back</a>";
+      }
+    }
+}
+else{
+echo "Fill all the mandatory fields !!";
+echo "<br><a href='addquestion.php'>Go Back</a>";
+}
+
 			echo "<form name='addquestions' action=addquestion.php method=post >";
             echo "<br>";
             echo "<br>";
