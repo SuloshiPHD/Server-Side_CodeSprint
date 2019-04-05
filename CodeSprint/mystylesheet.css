@@ -1,0 +1,124 @@
+/*External Stylesheet for homteq*/
+/*Importing Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+body
+{
+background-image: url("bi1.jpg");
+}
+#container
+{
+margin: 0 auto;
+width: 90%;
+background: #ffffcc;
+font-family: Montserrat;
+border-style: None;
+ border-color: #F8F8F8;
+}
+#header
+{
+background: #ffff99;
+padding: 10px 30px;
+}
+#header h1
+{
+margin: 0;
+margin-left:300px;
+text-align:left;
+color: #000000;
+font-family: Fjalla One;
+font-size: 50;
+width: 170;
+height:50;
+padding: 10px;
+}
+
+#header h2 {
+margin-left:250px;
+color: #000000;
+font
+-size: 15;
+text
+-align: left;
+}
+
+img{
+	width:20%;
+	height:25%;
+	margin-left:500px;
+	margin-top:-140px;
+}
+
+#navigation {
+float: left;
+width: 99%;
+padding:5px;
+background: #b30000;
+}
+#navigation ul {
+margin: 0;
+padding: 0;
+}
+#navigation ul li {
+list
+-style
+-type: none;
+display: inline;
+}
+
+#navigation li a {
+display: block;
+float: left;
+padding: 5px 25px;
+color: #FFF;
+text
+-decoration: none;
+border
+-right: 0px solid#fff;
+}
+#navigation li a:hover
+{
+background: #ff66a3;
+color: #fff
+}
+#content {
+clear: left;
+padding: 20px;
+}
+#content h4 {
+color:#8d194a;
+font
+-size: 24;
+margin: 0 0 .5em;
+}
+#content h5 {
+color:#194a8d;
+font
+-size: 18;
+margin: 0 0 .5em;
+}
+
+#footer
+{
+background:#b30000;
+text-align: center;
+padding: 5px;
+color: #000000;
+}
+table, th, td
+{
+border-collapse:collapse;
+border: 2px solid #4a8d19;
+}
+th
+{
+padding:10px;
+}
+td
+{
+padding:10px;
+text-align:left;
+color:#000000;
+}
+
+
