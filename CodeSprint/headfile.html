@@ -15,32 +15,33 @@ img{
 <!--HTML document to define the layout of the header and the navigation bar-->
 <div id="container">
 <div id="header">
-<h1>Gift Me</h1>
-<h2>Gift Your Loved Ones</h2>
+<h1>QuizLet</h1>
+<h2>Improve Knowledge! Solve problems!!</h2>
 <img src="head.png">
 </div>
 <div id="navigation">
-<ul><?php 
+<ul>
+<?php 
 if(isset($_SESSION['userid'])){
    if($_SESSION['user_type']=='Customer'){
-    echo "<li><a href='index.php'>All Flowers</a></li>";
+    echo "<li><a href='welcome.php'>Home</a></li>";
     echo "<li><a href='aboutus.php'>About Us</a></li>";
     echo "<li><a href='logout.php'>Logout</a></li>";
-    echo "<li style='float: right'><a href='cart.php'>Flower Cart</a></li>";
+   
    }
    if($_SESSION['user_type']=='Administrator'){
-    echo "<li><a href='index.php'>All Flowers</a></li>";
-    echo "<li><a href='addproduct.php'>Add Product</a></li>";
-    echo "<li><a href='editproduct.php'>Edit Product</a></li>";
+    echo "<li><a href='welcome.php'>Home</a></li>";
+    echo "<li><a href='addproduct.php'>Add Questions</a></li>";
+    echo "<li><a href='editproduct.php'>Edit Questions</a></li>";
     echo "<li style='float: right'><a href='logout.php'>Staff Logout</a></li>";
    }
 }
 else {
-echo "<li><a href='index.php'>All Flowers</a></li>";
+echo "<li><a href='welcome.php'>Home</a></li>";
 echo "<li><a href='aboutus.php'>About Us</a></li>";
 echo "<li><a href='signup.php'>Sign Up</a></li>";
 echo "<li><a href='login.php'>Login</a></li>";
-echo "<li style='float: right'><a href='cart.php'>Smart Basket</a></li>";
+
 echo "<li style='float: right'><a href='login.php'>Staff Login</a></li>";
 }
 ?>
